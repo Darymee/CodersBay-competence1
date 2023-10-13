@@ -1,0 +1,431 @@
+:root {
+  --white: #ffffff;
+  --beige: #c5bebe;
+  --main: #101117;
+
+  --border-radius: 8px;
+
+  --duration: 300ms;
+  --timing: ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: "Advent Pro", sans-serif;
+
+  color: var(--main);
+}
+
+body {
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+
+section {
+  padding: 20px 25px;
+
+  @media screen and (min-width: 768px) {
+    padding: 40px 50px;
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+.logo {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* ----------Header------------ */
+
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  position: fixed;
+  z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    padding: 30px 50px;
+  }
+}
+
+.nav {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+
+  margin-top: 75px;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
+
+.nav-list a {
+  padding: 15px 7px;
+
+  font-size: 2rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  color: var(--main);
+
+  transition: color var(--duration) var(--timing);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 1.5rem;
+    color: var(--white);
+  }
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--beige);
+}
+
+.menu-open-btn {
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.menu-open-btn svg,
+.menu-close-btn svg {
+  width: 25px;
+  height: 25px;
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.menu-open-btn svg {
+  fill: var(--white);
+}
+
+.menu-close-btn svg {
+  fill: var(--main);
+}
+
+/* ----------Mob menu------------ */
+
+.mob-menu {
+  background-color: var(--beige);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  padding: 50px;
+}
+
+/* ----------Hero------------ */
+
+.hero-section {
+  background: url("./img/bg.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  height: 800px;
+
+  @media screen and (min-width: 1200px) {
+    height: 1200px;
+  }
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+
+  color: var(--beige);
+  text-transform: uppercase;
+
+  margin-top: 250px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 500px;
+  }
+}
+
+.section-title {
+  font-size: 2.5rem;
+
+  margin-bottom: 20px;
+}
+
+/* ----------About------------ */
+
+.about-subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* ----------Menu------------ */
+
+.menu-section {
+  background-color: var(--beige);
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-column-gap: 50px;
+    grid-row-gap: 25px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.menu-list li {
+  text-align: center;
+}
+
+.menu-list h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.menu-tags {
+  display: inline-block;
+  padding: 5px 7px;
+  margin-bottom: 5px;
+  background-color: var(--main);
+  color: var(--white);
+
+  border-radius: var(--border-radius);
+}
+
+/* ----------Location------------ */
+
+.location-section {
+  border-bottom: 1px solid var(--beige);
+}
+
+.location-map {
+  width: 100%;
+  height: 280px;
+
+  border-radius: var(--border-radius);
+
+  @media screen and (min-width: 768px) {
+    height: 400px;
+  }
+}
+
+/* ----------Contact------------ */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.contact-form ≥ label {
+  display: block;
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 1.3rem;
+
+  color: var(--main);
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.form-input {
+  font-size: 1.1rem;
+  font-weight: 500;
+
+  padding: 10px;
+  margin-bottom: 10px;
+
+  border: none;
+  border-bottom: 1px solid var(--main);
+  outline: none;
+
+  transition: border-bottom var(--duration) var(--timing);
+}
+
+.form-input:hover,
+.form-input:focus {
+  border-bottom: 1px solid var(--beige);
+}
+
+.form-agreement {
+  margin: 0 auto 20px;
+}
+
+.form-agreement input {
+  margin-right: 5px;
+}
+
+.checkbox-label {
+  margin-right: 5px;
+}
+
+.form-submit {
+  cursor: pointer;
+
+  padding: 10px 15px;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  background-color: var(--beige);
+  border: none;
+  border-radius: var(--border-radius);
+
+  transition: color var(--duration) var(--timing),
+    background-color var(--duration) var(--timing);
+
+  @media screen and (min-width: 768px) {
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+
+.form-submit:hover,
+.form-submit:focus {
+  background-color: var(--main);
+  color: var(--beige);
+}
+
+/* ----------Button anchor------------ */
+
+.button-anchor {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: fixed;
+    bottom: 160px;
+    right: 50px;
+  }
+}
+
+.button-anchor svg {
+  width: 30px;
+  height: 30px;
+
+  transform: rotate(-90deg);
+}
+
+/* ----------Footer------------ */
+
+footer {
+  padding: 20px 25px;
+  background-color: var(--main);
+
+  @media screen and (min-width: 768px) {
+    padding: 30px 50px;
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-link:hover svg,
+.footer-link:focus svg {
+  fill: var(--white);
+}
+
+.footer-link svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--beige);
+
+  transition: fill var(--duration) var(--timing);
+}
+
+.footer-text {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--white);
+}

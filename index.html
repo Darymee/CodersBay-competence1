@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/x-icon" href="./img/favicon.png" rel="shortcut icon" />
+    <title>Burgeria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo">Burgeria 🍔</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="menu-open-btn">
+        <svg>
+          <use href="./img/sprite.svg#menu"></use>
+        </svg>
+      </button>
+
+      <!-- Mob menu -->
+      <div class="mob-menu is-hidden">
+        <button type="button" class="menu-close-btn">
+          <svg>
+            <use href="./img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <nav class="mob-nav">
+          <ul class="nav-list">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About us</a></li>
+            <li><a href="#menu" class="nav-link">Menu</a></li>
+            <li><a href="#location" class="nav-link">Location</a></li>
+            <li><a href="#contact" class="nav-link">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+
+      <section id="hero" class="hero-section">
+        <div class="container">
+          <h1 class="hero-title">The best burgers ever</h1>
+        </div>
+      </section>
+
+      <!-- About-->
+
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2 class="section-title">About us</h2>
+          <h3 class="about-subtitle">Welcome to our Burgeria restaurant!</h3>
+          <p class="about-text">
+            We are a team of enthusiasts who share a passion for extraordinary
+            burgers. Our journey began with the dream of creating the perfect
+            burger, and we paid attention to every detail to make that dream a
+            reality. We take pride in offering only the freshest and
+            highest-quality ingredients for our burgers. Our meat patties are
+            crafted from select cuts, our buns are baked in-house, and all our
+            vegetables are fresh and prepared with care. We cherish flavor and
+            quality, making each burger a culinary masterpiece.
+          </p>
+          <p class="about-text">
+            Our establishment is more than just a restaurant; it's a place where
+            you can savor great food in a cozy atmosphere. Our staff is always
+            ready to welcome you and make your visit unique and unforgettable.
+            We strive to ensure every guest feels special, and that's our main
+            inspiration. We believe that a good burger can make your day better,
+            and we're ready to deliver that experience to you.
+          </p>
+          <p class="about-text">
+            Thank you for choosing us. We look forward to welcoming you to our
+            restaurant and treating you to the unforgettable taste of burgers
+            created with love and passion. Welcome to the world of burgers made
+            with care and devotion.
+          </p>
+        </div>
+      </section>
+
+      <!-- Menu-->
+
+      <section id="menu" class="menu-section">
+        <div class="container">
+          <h2 class="section-title">Menu</h2>
+          <ul class="menu-list">
+            <li>
+              <img src="./img/burger-beef.jpg" alt="Classic Beef Bliss" />
+              <h3>Classic Beef Bliss</h3>
+              <span class="menu-tags">#ClassicBurger</span>
+              <span class="menu-tags">#BeefLovers</span>
+              <span class="menu-tags">#AllAmerican</span>
+            </li>
+            <li>
+              <img src="./img/burger-spicy.jpg" alt="Spicy Mexi-Melt" />
+              <h3>Spicy Mexi-Melt</h3>
+              <span class="menu-tags">#SpicyBurger</span>
+              <span class="menu-tags">#MexicanFlavors</span>
+              <span class="menu-tags">#HeatLovers</span>
+            </li>
+            <li>
+              <img src="./img/burger-mushrooms.jpg" alt="Mushroom Madness" />
+              <h3>Mushroom Madness</h3>
+              <span class="menu-tags">#MushroomBurger</span>
+              <span class="menu-tags">#VegetarianDelight</span>
+              <span class="menu-tags">#UmamiFlavors</span>
+            </li>
+            <li>
+              <img src="./img/burger-bbq.jpg" alt="BBQ Bacon Bonanza" />
+              <h3>BBQ Bacon Bonanza</h3>
+              <span class="menu-tags">#BBQBurger</span>
+              <span class="menu-tags">#BaconLovers</span>
+              <span class="menu-tags">#SmokyGoodness</span>
+            </li>
+            <li>
+              <img src="./img/fishburger.jpg" alt="Ocean's Catch Combo" />
+              <h3>Ocean's Catch Combo</h3>
+              <span class="menu-tags">#SeafoodBurger</span>
+              <span class="menu-tags">#FishLovers</span>
+              <span class="menu-tags">#SurfAndTurf</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Location-->
+
+      <section id="location" class="location-section">
+        <div class="container">
+          <h2 class="section-title">Location</h2>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48362.60018224018!2d-74.08033415136718!3d40.747451100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259b830e1276d%3A0x35af8b4edd3f426d!2sNew%20York%20Burger%20Co.!5e0!3m2!1sru!2sat!4v1696928727097!5m2!1sru!2sat"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="location-map"
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Contacts-->
+
+      <section id="contact">
+        <div class="container">
+          <h2 class="section-title">Contact us</h2>
+          <form class="contact-form">
+            <label for="name" class="form-label">Name:</label>
+            <input id="name" type="text" class="form-input" />
+            <label for="email" class="form-label">Email:</label>
+            <input id="email" type="email" class="form-input" />
+            <label for="tel" class="form-label">Tel:</label>
+            <input id="tel" type="tel" class="form-input" />
+            <label for="message" class="form-label">Message:</label>
+            <textarea id="message" class="form-input"></textarea>
+
+            <p>I want to receive new information via:</p>
+            <div>
+              <input type="radio" id="byEmail" value="email" />  
+              <label for="byEmail" class="checkbox-label">Email</label>
+
+              <input type="radio" id="bySms" value="sms" />  
+              <label for="bySms" class="checkbox-label">SMS</label>
+
+              <input type="radio" id="default" value="default" />  
+              <label for="default" class="checkbox-label"
+                >I don't want to receive information</label
+              >
+            </div>
+            <div class="form-agreement">
+              <input type="checkbox" id="agreement" />
+              <label for="agreement"
+                >I agree with the newsletter and accept the terms of the
+                agreement</label
+              >
+            </div>
+            <input type="submit" value="Submit" class="form-submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Anchor btn-->
+
+    <a href="#hero" class="button-anchor">
+      <svg>
+        <use href="./img/sprite.svg#arrow"></use>
+      </svg>
+    </a>
+
+    <!-- Footer-->
+
+    <footer>
+      <div class="footer-wrapper">
+        <a href="/" class="logo">Burgeria 🍔</a>
+        <ul class="footer-list">
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+              class="footer-link"
+            >
+              <svg>
+                <use href="./img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+              class="footer-link"
+            >
+              <svg>
+                <use href="./img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer-text">All rights reserved © 2023</p>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
